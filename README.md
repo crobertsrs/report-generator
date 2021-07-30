@@ -73,78 +73,79 @@ Use the commands `ls` to list directories and files and the commend `cd` to chan
 
 ```
 .
-├──Applications
-├──Desktop
-├──Downloads
-├──Documents
-├── Documents
-│   ├── Books
-│   ├── Notes
-│   └── Projects
-│       ├── Database-Development
-│       ├── QR-Code-Generation
-│       └── Tutorial-Writing
-└── Pictures
+├──applications
+├──desktop
+├──downloads
+├──documents
+├── documents
+│   ├── books
+│   ├── notes
+│   └── projects
+│       ├── database-development
+│       ├── qr-code-generation
+│       └── tutorial-writing
+└── pictures
 ```
 
 Though it isn't strictly necessary, it can be a good idea to make your project directory first so you can create an environment with the same name so you never really need to remember the name of the environment.
 
-To make a new directory in Projects, you might enter the following commands:
+To make a new directory in projects, you might enter the following commands:
 
 ```
-$ cd Documents
+$ cd documents
 $ ls
-Books
-Notes
-Projects
-$ cd Projects
+books
+notes
+projects
+$ cd projects
 $ ls
-Database Development
-QR Code Generation
-Tutorial Writing
-$ mkdir Report-Generator
+database-development
+qr-code-generation
+tutorial-writing
+$ mkdir report-generator
 $ ls
-Database-Development
-QR-Code-Generation
-Report-Generator
-Tutorial-Writing
+database-development
+qr-code-generation
+report-generator
+tutorial-writing
 ```
 
-You should now have a directory called "Report-Generator" in your Projects folder. Note that this tutorial uses dashes or underscores between words when making fils and directories. If you use spaces, you will need to use quotes around the names. For example, to make a directory called `Report Generator` you would need to use a command like `mkdir "Report Generator"` with quotes.
+You should now have a directory called "report-generator" in your projects folder. Note that this tutorial uses dashes or underscores between words when making fils and directories. If you use spaces, you will need to use quotes around the names. For example, to make a directory called `report generator` you would need to use a command like `mkdir "report generator"` with quotes.
 
 ```
 .
-├──Applications
-├──Desktop
-├──Downloads
-├──Documents
-├── Documents
-│   ├── Books
-│   ├── Notes
-│   └── Projects
-│       ├── Database-Development
-│       ├── QR-Code-Generation
-│       ├── Report-Generator
-│       └── Tutorial-Writing
-└── Pictures
+
+├──applications
+├──desktop
+├──downloads
+├──documents
+├── documents
+│   ├── books
+│   ├── notes
+│   └── projects
+│       ├── database-development
+│       ├── qr-code-generation
+│       ├── report-generator
+│       └── tutorial-writing
+└── pictures
 ```
 
 Enter the new directory:
 
 ```
-$ cd Report-Generator
+$ cd report-generator
 ```
 
 Now that you have a directory for your project, you know what you should name your Python environment. The command below will use Anaconda to create a new Python environment called Report-Generator that will have Python 3.7.7.
 
 ```
-conda create -n Report-Generator python=3.7.7
+conda create -n report-generator python=3.7.7
 ```
 
 With most environment managers, creating the environment is one step, and actually using it is another. To start using (to activate) the environment, enter:
 
 ```
-conda activate Report-Generator
+conda activate report-generator
 ```
 
 More information on using Anaconda can be found in Anaconda's documentation. At the time of writing, the page on managing environments could be found at [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
@@ -279,10 +280,10 @@ The reports are Excel spreadsheets that conform with how data was collected and 
     │         └── 2017-2018_summary.html
     │
     └── reports
-         ├── 2017-2018_KPIs.xlsx
-         ├── 2018-2019_KPIs.xlsx
-         ├── 2019-2020_KPIs.xlsx
-         └── 2020-2021_KPIs.xlsx
+         ├── 2017-2018_kpis.xlsx
+         ├── 2018-2019_kpis.xlsx
+         ├── 2019-2020_kpis.xlsx
+         └── 2020-2021_kpis.xlsx
 ```
 
 ### main.py
