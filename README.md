@@ -168,12 +168,12 @@ If you are familiar with github, you've likely already cloned this repo (see [ht
 
 ## Structure
 
-The report generator has three major parts and a config file:
+The report generator has three major parts and a main file:
 
 - source-data
 - code
 - outputs
-- config.py
+- main.py
 
 source-data and code have one subdirectory for every year of data in the output. outputs has subdirectories for html dashboard summaries, single file reports, and the templates used to make the the summaries and reports.
 
