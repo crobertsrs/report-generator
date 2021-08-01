@@ -183,27 +183,27 @@ This directory is where all of the input files should be stored. We've found the
 
 ```
 .
-├── source-data
+└── source-data
     ├── 2017-2018
-    │    ├── permenant-records
-    │    ├── enrollment-records
+    │    ├── permenant-records.csv
+    │    ├── enrollment-records.csv
     ⋮    ⋮
-    │    └── internship-log
+    │    └── internship-log.csv
     ├── 2019-2020
-    │    ├── permenant-records
-    │    ├── enrollment-records
+    │    ├── permenant-records.csv
+    │    ├── enrollment-records.csv
     ⋮    ⋮
-    │    └── internship-log
+    │    └── internship-log.csv
     ├── 2018-2019
-    │    ├── permenant-records
-    │    ├── enrollment-records
+    │    ├── permenant-records.csv
+    │    ├── enrollment-records.csv
     ⋮    ⋮
-    │    └── internship-log
+    │    └── internship-log.csv
     └── 2020-2021
-    │    ├── permenant-records
-    │    ├── enrollment-records
-    ⋮    ⋮
-    │    └── internship-log
+         ├── permenant-records.csv
+         ├── enrollment-records.csv
+         ⋮
+         └── internship-log.csv
 ```
 
 ### code
@@ -212,27 +212,27 @@ This directory is for the code that will calculate each of the metrics. We've fo
 
 ```
 .
-├── code
+└── code
     ├── 2017-2018
-    │    ├── 01_first-metric
-    │    ├── 02_second-metric
+    │    ├── 01_first-metric.py
+    │    ├── 02_second-metric.py
     ⋮    ⋮
-    │    └── 10_final-metric
+    │    └── 10_final-metric.py
     ├── 2018-2019
-    │    ├── 01_first-metric
-    │    ├── 02_second-metric
+    │    ├── 01_first-metric.py
+    │    ├── 02_second-metric.py
     ⋮    ⋮
-    │    └── 10_final-metric
+    │    └── 10_final-metric.py
     ├── 2019-2020
-    │    ├── 01_first-metric
-    │    ├── 02_second-metric
+    │    ├── 01_first-metric.py
+    │    ├── 02_second-metric.py
     ⋮    ⋮
-    │    └── 10_final-metric
+    │    └── 10_final-metric.py
     └── 2020-2021
-         ├── 01_first-metric
-         ├── 02_second-metric
+         ├── 01_first-metric.py
+         ├── 02_second-metric.py
          ⋮
-         └── 10_final-metric
+         └── 10_final-metric.py
 ```
 
 ### outputs
@@ -245,7 +245,7 @@ The reports are Excel spreadsheets that conform with how data was collected and 
 
 ```
 .
-├── output
+└── output
     ├── dashboard-summaries
     │    ├── 2017-2018
     │    │    ├── individual-metrics
@@ -300,9 +300,12 @@ Here are a few common problems have come up over the years:
 
 ## TODOS
 
-- Choose mock metrics
 - Add mock data
   - Choose mock sources
+    - permanent-recs.csv
+    - enrollment-recs.csv
+    - internships.csv
+    - careers.csv
   - Determine columns for each
   - Generate reasonable fake data
   - Use 2017-2018 as the year with missing data
